@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a44 0%, #fc6076 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #fff;
+    padding: 40px 60px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo da Paginação */
+.pagination {
+    display: inline-flex;
+    background: #e74c3c; /* Vermelho da imagem */
+    list-style: none;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.pagination li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,0.15); /* Divisórias sutis */
+    transition: all 0.3s ease;
+}
+
+.pagination li:last-child {
+    border-right: none;
+}
+
+.pagination li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Estados de Hover e Ativo */
+.pagination li.numb:hover,
+.pagination li.btn-prev:hover,
+.pagination li.btn-next:hover {
+    background: #c0392b; /* Vermelho mais escuro no hover */
+}
+
+.pagination li.active {
+    background: #c0392b;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pagination li i {
+    font-size: 13px;
+    margin: 0 5px;
+}
